@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ميزانيتي الشخصية</title>
+  <!-- link in css -->
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <img class="e3" src="1.jpg" alt="">
+    <h1>ميزانيتي الشخصية</h1>
+    <form id="budget-form">
+      <label for="income">الدخل:</label>
+      <input type="text" id="income" placeholder="أدخل الدخل" required>
+      
+      <label for="expense">المصاريف:</label>
+      <input type="text" id="expense" placeholder="أدخل المصروفات" required>
+      
+      <button type="submit">إضافة</button>
+      <button type="button" id="reset">مسح الكل</button>
+      <button type="button" id="save">حفظ الجدول</button>
+    </form>
+
+    <h2>تفاصيل الميزانية</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>الدخل</th>
+          <th>المصاريف</th>
+          <th>المتبقي</th>
+          <th>التاريخ</th>
+        </tr>
+      </thead>
+      <tbody id="budget-details">
+        <!-- سيتم إضافة الصفوف هنا -->
+      </tbody>
+    </table>
+    <h3 id="total">الإجمالي المتبقي: 0</h3>
+
+    <div class="saved-tables">
+      <h2>الجداول المحفوظة</h2>
+      <div id="saved-tables-list"></div>
+    </div>
+
+    <p id="error-message" class="error-message"></p>
+    <script src="main.js"></script>
+  </div>  
+</body>
+</html>

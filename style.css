@@ -1,0 +1,196 @@
+/* استيراد الخط العربي "Cairo" */
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap");
+
+* {
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+}
+
+body {
+  direction: rtl;
+  text-align: center;
+  background-color: #222; /* خلفية داكنة */
+  color: #f1f1f1; /* نص أبيض */
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #333; /* خلفية داكنة للـ container */
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.e3 {
+  width: 300px;
+  border: #222 2px solid;
+}
+
+h1,
+h2,
+h3 {
+  color: #ffffff; /* اللون الأصفر */
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 16px;
+  color: #ffd700; /* اللون الأصفر */
+}
+
+input {
+  margin: 5px 0;
+  padding: 12px;
+  width: 90%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+}
+
+input:focus {
+  border-color: #ffd700; /* اللون الأصفر عند التركيز */
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #ffd700; /* زر أصفر */
+  color: #222; /* نص باللون الأسود */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #ffc107; /* تغيير اللون عند المرور */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  font-size: 20px;
+  border: 1px solid #444;
+  padding: 12px;
+  text-align: center;
+  color: #ffcc00; /* نص باللون الأصفر */
+}
+
+th {
+  background-color: #222; /* خلفية داكنة لرؤوس الأعمدة */
+}
+
+.saved-tables {
+  margin-top: 20px;
+}
+
+.saved-tables button {
+  margin: 5px;
+  padding: 12px;
+  background-color: #ffd700; /* زر أصفر */
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.saved-tables button:hover {
+  background-color: #ffc107; /* تغيير اللون عند المرور */
+}
+
+.delete-btn {
+  background-color: #dc3545; /* الأحمر للحذف */
+}
+
+.delete-btn:hover {
+  background-color: #c82333; /* تغيير اللون عند المرور */
+}
+
+.error-message {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #ff5733; /* اللون البرتقالي للإنذار */
+  font-weight: bold;
+}
+
+#total {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 620px) {
+
+  .saved-tables button {
+    font-size: 12px;
+  }
+
+
+  
+}
+@media only screen and (max-width: 600px) {
+
+  .saved-tables button {
+    font-size: 10px;
+  }
+  th,
+  td {
+   font-size: 15px;
+  }
+  
+}
+
+@media only screen and (max-width: 490px) {
+
+  .saved-tables button {
+    font-size: 8px;
+  }
+  th,
+  td {
+   font-size: 10px;
+  }
+  
+}
+
+@media only screen and (max-width: 395px) {
+
+  .saved-tables button {
+    font-size: 8px;
+  }
+  th,
+  td {
+   font-size: 10px;
+  }
+
+  input {
+    width: 70%;
+  }
+  
+  
+  button {
+    font-size: 14px;
+  }
+  
+  button:hover {
+    background-color: #ffc107; /* تغيير اللون عند المرور */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+}
+
+
